@@ -18,13 +18,12 @@ Redis网络模型是一个使用**IO多路复用**、**单线程**、**非阻塞
 
 ### 附：各个文件介绍
 
+
 |文件|作用|
-|-|-|
+|---|---|
 |ae.c ae.h ae_epoll.c ae_select.c|Redis事件处理器的实现（Redis源码）|
 |anet.c  anet.h|Redis网络库的实现（Redis源码）|
 |buffer.c  buffer.h|自行实现的buffer|
 |protocol.c  protocol.h|自行定义协议|
 |define.h|一些常量，比如listen的backlog大小|
 |server.c  server_test.c|自定义的服务端和客户端程序|
-
-
