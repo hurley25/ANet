@@ -16,7 +16,7 @@
  *
  * 半连接队列最大长度
  *
- *   if kernel < 2.6.20"
+ *   if kernel_version < 2.6.20
  *       net.ipv4.tcp_max_syn_backlog
  *   else
  *      roundup_pow_of_two(max(min(net.core.somaxconn, net.ipv4.tcp_max_syn_backlog),8)+1)
